@@ -34,7 +34,7 @@ Node *insert(Node *root, int data)
     {
         root->left = insert(root->left, data);
     }
-    else 
+    else if (data > (root->data)) 
     {
         root->right = insert(root->right, data);
     }
